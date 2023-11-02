@@ -19,6 +19,7 @@ move_speed = 4
 
 running = True
 while running:
+    clock.tick(FPS)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -34,4 +35,4 @@ while running:
     screen.fill(BLACK)
     pygame.draw.circle(screen, WHITE, ball_pos, ball_size)
     pygame.display.flip()
-    clock.tick(FPS)
+
