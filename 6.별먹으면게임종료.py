@@ -24,7 +24,7 @@ star_pos =[screen_width-15, screen_height//2]
 
 running = True
 while running:
-    clock.tick(FPS)
+    clock.tick(FPS) # 초당 프레임 수 결정
     if (star_pos[0]-ball_pos[0])**2 + (star_pos[1]-ball_pos[1])**2 < (ball_size*2)**2:
         running = False
     for event in pygame.event.get():
